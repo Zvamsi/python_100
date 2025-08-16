@@ -3,6 +3,7 @@ import datetime as dt
 from requests.auth import HTTPBasicAuth
 import os
 
+API='-----YOUR API KEY------'
 end_point='https://trackapi.nutritionix.com/v2/natural/exercise'
 headers={
    'x-app-id': os.environ.get('x-app-id'),
@@ -24,13 +25,13 @@ data=response.json()
 exercises=data['exercises']
 
 # GET ALL DETAILS FROM EXCEL SHEET
-get_details='https://api.sheety.co/0464ebb1991f9d3edb5615fce24c07dc/myWorkouts/workouts'
+get_details=f'https://api.sheety.co/{API}/myWorkouts/workouts'
 
 # details_response=requests.get(get_details)
 # print(details_response.json())
 
 # POST A EXERCISE
-post_details='https://api.sheety.co/0464ebb1991f9d3edb5615fce24c07dc/myWorkouts/workouts'
+post_details=f'https://api.sheety.co/{API}/myWorkouts/workouts'
 
 for ex in exercises:
     post_params={

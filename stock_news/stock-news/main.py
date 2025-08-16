@@ -20,7 +20,7 @@ COMPANY_NAME = "Tesla Inc"
 parameters={
     'function':'TIME_SERIES_DAILY',
     'symbol':STOCK,
-    'apikey':'5R9QO4R9XC9RD9BF'
+    'apikey':'---API KEY----'
 }
 response_stock=requests.get('https://www.alphavantage.co/query',params=parameters)
 response_stock.raise_for_status()
@@ -40,7 +40,7 @@ if differ_percent>2 or differ_percent<2:
         'to': last_today,
         'language': 'en',
         'sortBy': 'popularity',
-        'apikey': '6bfd6886fa3842b999a0ff7895a6fd3c'
+        'apikey': '---YOUR API KEY-----'
     }
     news_response = requests.get("https://newsapi.org/v2/everything", params=news_parameters)
     news_response.raise_for_status()
@@ -60,10 +60,9 @@ if differ_percent>2 or differ_percent<2:
 ## STEP 3: Use https://www.twilio.com
 # Send a seperate message with the percentage change and each article's title and description to your phone number.
 
-account_sid='AC500e8d2172d2a5d91d5d782fe14bd90b'
-auth_token='405c6adf7e1deea6370608e525c333aa'
-# api_key='tsnDhJQZHDmJf2K7p6JB4WzqRq0CikXT'
-# sid='SK5f31d0e810df78684913dd91fe719e4f'
+account_sid='---YOUR ACCOUNT SID-----'
+auth_token='----YOUR AUTH TOKEN-----'
+
 client=Client(account_sid,auth_token)
 up_down=''
 if differ_percent>2:

@@ -12,8 +12,8 @@ year_=dt.datetime.now().year
 today_str=f'{year_}{month_}{day_}'
 today=dt.datetime.now()
 
-TOKEN='thisissecret'
-USER_NAME='vamshi001'
+TOKEN='---YOUR TOKEN---'
+USER_NAME='-----YOUR USER NAME-----'
 GRAPH="graph1"
 
 create_user_url='https://pixe.la/v1/users'

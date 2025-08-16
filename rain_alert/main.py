@@ -2,7 +2,7 @@ import requests
 import os
 from twilio.rest import Client
 
-api_key='bba7acfeadcf523f7639e0257cc7e442'
+api_key='---api key----'
 lat=12.986662
 lon=77.552659
 
@@ -13,8 +13,8 @@ parameters={
     'cnt':5
 }
 
-os.environ["TWILIO_ACCOUNT_SID"]="AC3c5f21c7db087511a3965e8152435ced"
-os.environ["TWILIO_AUTH_TOKEN"]="05cc7f55cf1a35077cdb0cb8cc7ec31e"
+os.environ["TWILIO_ACCOUNT_SID"]="----YOUR API SID------"
+os.environ["TWILIO_AUTH_TOKEN"]="----YOUR API AUTH-----"
 
 
 

@@ -75,8 +75,8 @@ with open(filepath, "r", encoding="utf-8") as file:
 # HINT 3: Remember to login to your email service with email/password. Make sure your security setting is set to allow less secure apps.
 # HINT 4: The message should have the Subject: Happy Birthday then after \n\n The Message Body.
 
-my_email='testpython970@gmail.com'
-password='xmvgltguxmoimcrx'
+my_email='----YOUR PASSWORD'
+password='-----YOUR PASSWORD----'
 
 msg = EmailMessage()
 msg.set_content(wishes)
